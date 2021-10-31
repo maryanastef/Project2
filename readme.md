@@ -1,2 +1,3 @@
-History of the Internet Link: 
-[History of Internet](http://internethistorywebsite.eastus.azurecontainer.io/home.html)
+
+[History of Internet]( historywebsite3.eastus.azurecontainer.io) <br>
+Contributors: Maryana Stefanyshyn and Samantha Moran
