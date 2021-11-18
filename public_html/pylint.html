@@ -126,15 +126,15 @@
                     Therefore, you need a lint tool, like Pylint, to find errors.</br></p>
                 <p>The default coding style used by Pylint is similar to PEP 8.</p>
                 <h5><strong>Installation:</strong></h5>
-                <p>Assuming that you are using Python, Pylint should be easily installable using pip. Install Pylint by running this command:</br></p>
+                <p>Assuming that you are using Python, Pylint should be easily installable using pip. Install Pylint by running this command:</br><i> For more information, please visit the <a href="https://pylint.pycqa.org/en/latest/user_guide/installation.html" target="_blank" >Installation Guide</a></i> </p>
                 <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">pip install pylint</p>
                 <p>Check where Pylint was installed by running:</p>
                 <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">$ which pylint</br>/usr/local/bin/pylint</p>
                 <h5><strong>Running Pylint:</strong></h5>
-                <p>Pylint is meant to be called from the command line.You can type:</br></p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">pylint calculation.py</p>
+                <p>Pylint is meant to be called from the command line. You can type:</br> <i> For more information, please visit the <a href="https://pylint.pycqa.org/en/latest/user_guide/run.html" target="_blank"> Running Pylint Guide </a></i> </p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">pylint fileName.py</p>
                 <p>Or you can call the directory, followed by the file. This will only work if the directory is a python package and has an __init__.py file.</br></p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen"> pylint calc/calculation.py</p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen"> pylint directory/fileName.py</p>
                 <h5><strong>Command Line Options:</strong></h5>
                 <p>Pylint has many checkers. You can disable a specific checker and its messages by specifying: </p>
                 <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:lightgrey"> --disable=< symbol >. </p>
@@ -145,6 +145,13 @@
                 <p>where,<strong> < symbol > </strong>is in a comma-separated list of checker names and message symbols. </p>
                 <p> It is possible to disable all messages with <strong>--disable=all. </strong>This is useful to enable only a few checkers or few messages by first disabling everything and then re-enabling what you need.</p>
                 <p> Python will search for a configuration file named pylintrc or .pylintrc </p>
+                <h5><strong>Open in PyCharm:</strong></h5>
+                <p>In Pycharm, </br>
+                    1. Go to File/Settings/Tools/External Tools/, </br> 2. Click Add "+" button </br> 3. Fill in the arguments:</br> Name: pylint </br> Program: C:\\Python27\Scripts\pylint </br> Parameters: etc... </br> Working directory : $FileDir$</br>
+                    5. Click "OK" in the Settings. Click right on the file or code </br> 6. Select External Tools/pylint </br>
+                    7. Pylint should run inside Pycharm </br>
+                    <i> For more information and questions, please visit <a href="https://www.mantidproject.org/How_to_run_Pylint.html" target="_blank"> How to run Pylint </a> </i>
+                </p>
             </div>
             <div class="col-lg-10 col-md-10 col-sm-6 my-col">
                 <img class="img-fluid" src="images/class.jpg" alt="Image of computer code">
