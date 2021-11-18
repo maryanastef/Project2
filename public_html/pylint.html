@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Pylint & Glossary</title>
+
+    <style>
+
+        h1 {
+            margin-top: 30px;
+            font-family: Rockwell;
+
+        }
+
+        body {
+            margin: 30px;
+            background-color: ghostwhite;
+            font-family: Verdana;
+
+        }
+
+        .my-container {
+            padding: 50px;
+        }
+
+        .my-row {
+            height: auto;
+            font-size: 12px;
+            padding: 20px;
+        }
+
+        .my-col {
+            height: auto;
+            padding: 5px;
+        }
+
+        .container {
+            margin-top: -30px;
+
+        }
+
+        #footer {
+            bottom: 2px;
+            height: 40px;
+            margin-top: 40px;
+            text-align: center;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/world.svg" alt="Logo Image" width="50" height="50">
+            History of the Internet
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Index</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="home.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Internet History
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="1960.html">1960s</a></li>
+                        <li><a class="dropdown-item" href="1970.html">1970s</a></li>
+                        <li><a class="dropdown-item" href="1990.html">1990s</a></li>
+                        <li><a class="dropdown-item" href="2000.html">2000s</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="home.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="pylint.html" >Implementing Pylint and Glossary</a></li>
+                        <li><a class="dropdown-item" href="">Article 2</a></li>
+                        <li><a class="dropdown-item" href="">Article 3</a></li>
+                        <li><a class="dropdown-item" href="">Article 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<h1><strong>Implementing Pylint and Glossary</strong></h1>
+
+<section>
+    <div class="container my-container">
+        <div class="row my-row">
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <h2><u><strong>Pylint Manual</strong></u></h2>
+                <p>Pylint is a tool that checks for errors in your Python code. It analyzes your code and compares it to the coding standard. If you are coding in Python, the computer does not catch bugs for you.
+                    Therefore, you need a lint tool, like Pylint, to find errors.</br></p>
+                <p>The default coding style used by Pylint is similar to PEP 8.</p>
+                <h5><strong>Installation:</strong></h5>
+                <p>Assuming that you are using Python, Pylint should be easily installable using pip. Install Pylint by running this command:</br><i> For more information, please visit the <a href="https://pylint.pycqa.org/en/latest/user_guide/installation.html" target="_blank" >Installation Guide</a></i> </p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">pip install pylint</p>
+                <p>Check where Pylint was installed by running:</p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">$ which pylint</br>/usr/local/bin/pylint</p>
+                <h5><strong>Running Pylint:</strong></h5>
+                <p>Pylint is meant to be called from the command line. You can type:</br> <i> For more information, please visit the <a href="https://pylint.pycqa.org/en/latest/user_guide/run.html" target="_blank"> Running Pylint Guide </a></i> </p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">pylint fileName.py</p>
+                <p>Or you can call the directory, followed by the file. This will only work if the directory is a python package and has an __init__.py file.</br></p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen"> pylint directory/fileName.py</p>
+                <h5><strong>Command Line Options:</strong></h5>
+                <p>Pylint has many checkers. You can disable a specific checker and its messages by specifying: </p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:lightgrey"> --disable=< symbol >. </p>
+                <p>If you want to enable only some checkers or message symbols, first use  </p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:lightgrey"> --disable=all . </p>
+                <p>Then,  </p>
+                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:lightgrey"> --enable=< symbol >. </p>
+                <p>where,<strong> < symbol > </strong>is in a comma-separated list of checker names and message symbols. </p>
+                <p> It is possible to disable all messages with <strong>--disable=all. </strong>This is useful to enable only a few checkers or few messages by first disabling everything and then re-enabling what you need.</p>
+                <p> Python will search for a configuration file named pylintrc or .pylintrc </p>
+                <h5><strong>Open in PyCharm:</strong></h5>
+                <p>In Pycharm, </br>
+                    1. Go to File/Settings/Tools/External Tools/, </br> 2. Click Add "+" button </br> 3. Fill in the arguments:</br> Name: pylint </br> Program: C:\\Python27\Scripts\pylint </br> Parameters: etc... </br> Working directory : $FileDir$</br>
+                    5. Click "OK" in the Settings. Click right on the file or code </br> 6. Select External Tools/pylint </br>
+                    7. Pylint should run inside Pycharm </br>
+                    <i> For more information and questions, please visit <a href="https://www.mantidproject.org/How_to_run_Pylint.html" target="_blank"> How to run Pylint </a> </i>
+                </p>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-6 my-col">
+                <img class="img-fluid" src="images/class.jpg" alt="Image of computer code">
+                <p style="font-size: 8px"> [By Pixabay from Pexels (https://www.pexels.com/photo/turned-on-computer-monitor-displaying-text-270360/)]
+            </div>
+        </div>
+        <div class="row my-row">
+            <div class="col-md-8 col-sm-6 my-col">
+                <h2><u><strong>Glossary:</strong></u></h2>
+                <p><strong>Attribute:</strong> attr() , creates attributes on class instances inside methods. </p>
+                <p><strong>Class Method:</strong> means that it is bound to the class and not the object of the class. This is useful for when we need to access the class itself and not the object. Class method can change a class state that would apply across all the instances of a class. </p>
+                <p><strong>Class:</strong> is a code template for creating objects. In Python, a class is created by using the keyword "class".</p>
+                <p><strong>Constructor:</strong> is a special kind of method that Python calls when it instantiates an object using the definitions found in your class. Python relies on the constructor to perform tasks such as assigning values to variables that the object will use.</p>
+                <p><strong>Design Patterns:</strong> provide a repeatable solution to a commonly occurring problem in software design. It is an essential part of object-oriented software development. </p>
+                <p><strong>Façade:</strong> is a structural design pattern that provides a simplified interface to a complex system of classes. It is often used in object-oriented programming. </p>
+                <p><strong>Factory:</strong> is an object for creating other objects</p>
+                <p><strong>Fixture:</strong> defines the steps and data that constitutes the arrangement phase of a test. In pytest, fixtures are functions used to define a test’s act phase. </p>
+                <p><strong>Instantiation:</strong> is creating a copy of the class which inherits all class variables and methods. To instantiate a class, we have to call the class as if it were a function, passing arguments that the __init__ method defines. </p>
+                <p><strong>Method:</strong> is a function that “belongs” to an object. For example, list objects have methods called <i>append, insert, remove, sort , etc.</i> In Python, you can create a list , list =[10,20,30] and apply a method such as my_list.append(40). This will add the number 40 to the existing list.  </p>
+                <p><strong>Namespace:</strong> is a dictionary in which the keys are the object names and the values are the objects themselves. Python maintains a namespace in the form of a Python dictionary.</p>
+                <p><strong>Object:</strong> is the collection of various data and functions. Everything in Python is treated as an object (variables, functions, lists, tuples, dictionaries, etc). It is important to note that every object belongs to its class.</p>
+                <p><strong>Property:</strong> is a function in Python that returns the object of the property class and is used to create a property of the class.   </p>
+                <p><strong>Static Method:</strong> means that it belongs to the class rather than the class’s object. A static method can be called without creating an object for the class. We can directly call the static method by referencing the class name. </p>
+                <p><strong>Type Cast:</strong> is a method to convert one variable data type into another data type. This can be useful when you want to add two numbers in which one existing value of a variable is an integer and the second is a string.</p>
+                <p><strong>Type Hint:</strong> is a formal solution to indicate the type of value within your Python code. Type hints help you maintain cleaner code and improve linters. </p>
+                <p><strong>Unit Test :</strong> is  the first level of software testing. This guarantees that some change in the code won’t affect the code that is running without errors.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    Maryana Stefanyshyn&#169;
+    <img src="https://www.w3.org/Icons/valid-html401" alt="W3C Validator">
+</footer>
+</body>
+
+
+</html>
