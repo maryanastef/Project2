@@ -41,6 +41,8 @@
         }
 
 
+
+
         #footer {
             bottom: 2px;
             height: 40px;
@@ -91,7 +93,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="pylint.html" >Implementing Pylint and Glossary</a></li>
-                        <li><a class="dropdown-item" href="aaatesting.html.html">AAA Testing with Python</a></li>
+                        <li><a class="dropdown-item" href="aaatesting.html">AAA Testing with Python</a></li>
                         <li><a class="dropdown-item" href="1990.html">Article 3</a></li>
                         <li><a class="dropdown-item" href="2000.html">Article 4</a></li>
                     </ul>
@@ -111,122 +113,64 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-<h1><strong>1970-1980s</strong></h1>
+<h1><strong>AAA Testing with Python</strong></h1>
 
 <section>
     <div class="container my-container">
         <div class="row my-row">
-            <div class="col-md-4 col-sm-6 my-col">
-                <img class="img-fluid" src="images/arpanetimg.jpg" alt="Image of Big Data">
-                <p style="font-size: 8px"> [Image. From Pixabay by xresch. Jan 19,2018.
-                    (https://pixabay.com/images/id-3088958/)]</p>
-            </div>
-            <div class="col-md-8 col-sm-6 my-col">
-                <h4><u><strong>Arpanet</strong></u></h4>
-                <strong>ARPANET</strong>, known as <strong>Advanced Research Projects Agency Network,</strong> became
-                the foundation for the internet by using the packet-switching technology.
-                <ul>
-                    <li>It's initial purpose was to link different computers at research institutions over telephone
-                        lines. The
-                        goal was to fix the circuit-switching technology.
-                    </li>
-                    <li>It made it easy for people to connect with each other and effectively communicate. 37 computers
-                        connected over USA to
-                        create the backbone of ARPAnet, comprised of UCLA, MIT, Stanford research institute , etc..
-                    </li>
-                    <li> According to Britannica, Paul Baran, a researcher at the RAND Corporation, was the first to
-                        introduce the idea of packet switching.
-                        He was designing a computer communication's network that would survive a nuclear attack and
-                        still function. Baran came up with the process, that he called "hot potato routing",which later
-                        became known as packet switching.
-                    </li>
-                </ul>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <h4><u><strong>What is AAA Testing?</strong></u></h4>
+               <p> <strong>AAA Testing,</strong> also known as <strong> Arrange-Act-Assert,</strong>is a great way to structure test cases. It describes the order of operations that need to be performed to write a good test.
+               AAA Testing represents a recognizable test template following the A-A-A pattern of testing. The pattern focuses each test on a single action. By applying AAA, you can ensure that your test is clear and more understandable and manageable. </p>
+                <p>For more information on AAA Testing, please read the article <a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/"> <i>Arrange-Act-Assert</i></a> </p>
+                <h5><strong><u>The A-A-A Pattern (Arrange-Act-Assert):</u></strong></h5>
+                <ol>
+                    <li><strong> Arrange:</strong> inputs and targets. Arrange steps sets up the test case. It will tell you if the test requires any objects or special settings, if it needs to log into a web app, etc.</li>
+                    <li><strong> Act: </strong> acts on the target behavior. Act steps covers the main thing to be tested, like calling a function or method. </li>
+                    <li><strong> Assert: </strong> asserts expected outcomes. Act steps returns some sort of a response and Assert steps verify the “goodness or badness” of that response. This step determines if the test <strong>PASSES or FAILS. </strong> Sometimes, assertions can be simple, like checking if a calculator adds, subtracts, multiplies or divides numbers properly. Other times, assertions can require checking multiple facets of a system.  </li>
+                </ol>
+                <p>Every programming language has testing frameworks. I will discuss Pytest, as one of the most popular frameworks. </p>
             </div>
         </div>
         <div class="row my-row">
-            <div class="col-lg-12 col-md-12 col-sm-6 my-col">
-                <h4><u><strong>Vincent Cerf and Robert Kahn</strong></u></h4>
-                <strong>Vincent Cerf and Robert Kahn,</strong> an american internet pioneer and electrical engineer,
-                first met in UCLA,
-                and later collaborated on the design of software called the <strong>Transmission Control
-                Protocol/Internet Protocol (TCP/IP).</strong>
-                Together, they created the architecture of the internet. The TCP/IP protocol was a set of rules for
-                message formats to allow computers and applications to exchange information.
-                These rules were standardized and had to be followed in order for the host to be able to understand the
-                message.
-                Today, Vint Cerf and Robert Kahn are known as “Fathers of the Internet”. They focused on finding a way
-                to get all computers to talk to each other and figured out a way to get
-                networks to send packets back and forth.
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <h4><u><strong>Unit Testing: </strong></u></h4>
+                <p> Unit Testing is a method that is used to test programs and applications to see if they function correctly and without any problems.
+                    It is part of software testing, which involves many steps. If any problems occur, they should be taken care of early on, so that they don't show up later for the end users.</p>
+                <p> The main purpose behind unit testing is to check that all individual parts are working well like it is supposed to. The entire system will only be able to work well if the individual parts are working well.</p>
+                <p> There are two types of unit testing: <strong>manual and automated. </strong>The automated method is most preferred because it is faster and more accurate. Automated testing usually involved the developer first writing a section of the code in the application so the function can be tested.
+                    The manual approach has a step-by-step instructional procedure that helps developers perform the test.</p>
+                Here is an example of a basic unit test for Python’s multiplication of a calculator.
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <img class="img-fluid" src="images/multiply.jpg" alt="Screenshot from Pycharm">
+                <p style="font-size: 8px"> <i>[Image from Maryana Stefanyshyn from PyCharm.]</i></p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+            <ol>
+                <li><strong> The Arrange Step </strong> creates a variable named “calc” for testing. It instantiates the calc class.</li>
+                <li><strong> The Act Step </strong> calls the “multiplying_numbers” function using the “calc” variable and stores the returned variable named “result”. </li>
+                <li><strong> The Assert Step </strong> verifies that “result” is correct. </li>
+            </ol>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-4 my-col">
-                <h4><u><strong>OSI Model</strong></u></h4>
-                OSI Model is a standardized framework used to show the functions of a networking system.
-                <table class="table table-sm">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Layers</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Application Layer</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Presentation Layer</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Session Layer</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Transport Layer (TCP)</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Network Layer (Packets, IP)</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Data Link Layer</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Physical Layer</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>[“OSI Model: The 7 Layers of Network Architecture.” BMC Blogs, 2021,
-                            www.bmc.com/blogs/osi-model-7-layers/#.]
-                    </tr>
-                    </tbody>
-                </table>
+                <p>Another example is a basic unit test for Python’s division of a calculator.</p>
             </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <img class="img-fluid" src="images/division.jpg" alt="Screenshot from Pycharm">
+                <p style="font-size: 8px"> <i>[Image from Maryana Stefanyshyn from PyCharm.]</i></p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <ol>
+                    <li><strong> The Arrange Step </strong> creates a variable named “calc” for testing. It instantiates the calc class.</li>
+                    <li><strong> The Act Step </strong> calls the “dividing_numbers” function using the “calc” variable and stores the returned variable named “result”. </li>
+                    <li><strong> The Assert Step </strong> verifies that “result” is correct. </li>
+                </ol>
+            </div>
+            <p>For more information on AAA Testing and Unit Testing, please read the <a href="https://performancelabus.com/unit-testing-importance/#1"> Unit Testing Article. </a></p>
         </div>
-        <div class="row my-row">
-            <div class="col-md-4 col-sm-6 my-col">
-                <img class="img-fluid" src="images/matrix.jpg" alt="Image of the Matrix">
-                <p style="font-size: 8px"> [Image. From Pixabay by designwebjae. Jan 26 ,2018.
-                    (https://pixabay.com/images/id-3109378/)]</p>
-            </div>
-            <div class="col-md-8 col-sm-6 my-col">
-                <h4><u><strong>IP and DNS</strong></u></h4>
-                <strong>IP</strong> introduced the basic system of numerical addresses. An address such as 129.89.43.5
-                identifies the
-                computer to which a data packet should be sent to and the network on which it can be found. However,
-                ARPAnet users were used to specifying computers by name or email addresses. Thus, a new domain name
-                system (DNS) and TCP/IP protocols replaced the old ARPAnet- connected computers. In the
-                <strong>DNS</strong>, high-level
-                domains had functional codes such as .gov, .edu, .mil, or national codes such as .uk, .usa.
-                Organizations received domain names ending in .edu, or .com. These domain names covered the assigned
-                numerical IP addresses associated with individual computers.
-            </div>
 
         </div>
-    </div>
 
 </section>
 
