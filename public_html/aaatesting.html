@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>AAA Testing</title>
+
+    <style>
+
+        h1 {
+            margin-top: 30px;
+            font-family: Rockwell;
+
+        }
+
+        body {
+            margin: 30px;
+            background-color: aliceblue;
+            font-family: Verdana;
+
+
+        }
+
+        .my-container {
+            padding: 50px;
+        }
+
+        .my-row {
+            height: auto;
+            font-size: 12px;
+            padding: 20px;
+        }
+
+        .my-col {
+            height: auto;
+            padding: 5px;
+        }
+
+
+
+
+        #footer {
+            bottom: 2px;
+            height: 40px;
+            margin-top: 40px;
+            text-align: center;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/world.svg" alt="Logo Image" width="50" height="50">
+            History of the Internet
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Index</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="home.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Internet History
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="1960.html">1960s</a></li>
+                        <li><a class="dropdown-item" href="1970.html">1970s</a></li>
+                        <li><a class="dropdown-item" href="1990.html">1990s</a></li>
+                        <li><a class="dropdown-item" href="2000.html">2000s</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="home.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="pylint.html" >Implementing Pylint and Glossary</a></li>
+                        <li><a class="dropdown-item" href="aaatesting.html">AAA Testing with Python</a></li>
+                        <li><a class="dropdown-item" href="1990.html">Article 3</a></li>
+                        <li><a class="dropdown-item" href="2000.html">Article 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<h1><strong>AAA Testing with Python</strong></h1>
+
+<section>
+    <div class="container my-container">
+        <div class="row my-row">
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <h4><u><strong>What is AAA Testing?</strong></u></h4>
+               <p> <strong>AAA Testing,</strong> also known as <strong> Arrange-Act-Assert,</strong>is a great way to structure test cases. It describes the order of operations that need to be performed to write a good test.
+               AAA Testing represents a recognizable test template following the A-A-A pattern of testing. The pattern focuses each test on a single action. By applying AAA, you can ensure that your test is clear and more understandable and manageable. </p>
+                <p>For more information on AAA Testing, please read the article <a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/"> <i>Arrange-Act-Assert</i></a> </p>
+                <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <h5><strong><u>The A-A-A Pattern (Arrange-Act-Assert):</u></strong></h5>
+                <ol>
+                    <li><strong> Arrange:</strong> inputs and targets. Arrange steps sets up the test case. It will tell you if the test requires any objects or special settings, if it needs to log into a web app, etc.</li>
+                    <li><strong> Act: </strong> acts on the target behavior. Act steps covers the main thing to be tested, like calling a function or method. </li>
+                    <li><strong> Assert: </strong> asserts expected outcomes. Act steps returns some sort of a response and Assert steps verify the “goodness or badness” of that response. This step determines if the test <strong>PASSES or FAILS. </strong> Sometimes, assertions can be simple, like checking if a calculator adds, subtracts, multiplies or divides numbers properly. Other times, assertions can require checking multiple facets of a system.  </li>
+                </ol>
+                <p>Every programming language has testing frameworks. I will discuss Pytest, as one of the most popular frameworks. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row my-row">
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <h4><u><strong>Unit Testing: </strong></u></h4>
+                <p> Unit Testing is a method that is used to test programs and applications to see if they function correctly and without any problems.
+                    It is part of software testing, which involves many steps. If any problems occur, they should be taken care of early on, so that they don't show up later for the end users.</p>
+                <p> The main purpose behind unit testing is to check that all individual parts are working well like it is supposed to. The entire system will only be able to work well if the individual parts are working well.</p>
+                <p> There are two types of unit testing: <strong>manual and automated. </strong>The automated method is most preferred because it is faster and more accurate. Automated testing usually involved the developer first writing a section of the code in the application so the function can be tested.
+                    The manual approach has a step-by-step instructional procedure that helps developers perform the test.</p>
+                Here is an example of a basic unit test for Python’s multiplication of a calculator.
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <img class="img-fluid" src="images/multiply.jpg" alt="Screenshot from Pycharm">
+                <p style="font-size: 8px"> <i>[Image from Maryana Stefanyshyn from PyCharm.]</i></p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+            <ol>
+                <li><strong> The Arrange Step </strong> creates a variable named “calc” for testing. It instantiates the calc class.</li>
+                <li><strong> The Act Step </strong> calls the “multiplying_numbers” function using the “calc” variable and stores the returned variable named “result”. </li>
+                <li><strong> The Assert Step </strong> verifies that “result” is correct. </li>
+            </ol>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-4 my-col">
+                <p>Another example is a basic unit test for Python’s division of a calculator.</p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                <img class="img-fluid" src="images/division.jpg" alt="Screenshot from Pycharm">
+                <p style="font-size: 8px"> <i>[Image from Maryana Stefanyshyn from PyCharm.]</i></p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 my-col">
+                <ol>
+                    <li><strong> The Arrange Step </strong> creates a variable named “calc” for testing. It instantiates the calc class.</li>
+                    <li><strong> The Act Step </strong> calls the “dividing_numbers” function using the “calc” variable and stores the returned variable named “result”. </li>
+                    <li><strong> The Assert Step </strong> verifies that “result” is correct. </li>
+                </ol>
+            </div>
+            <p>For more information on AAA Testing and Unit Testing, please read the <a href="https://performancelabus.com/unit-testing-importance/#1"> Unit Testing Article. </a></p>
+        </div>
+
+        </div>
+
+</section>
+
+<footer id="footer">
+    Maryana Stefanyshyn&#169;
+    <img src="https://www.w3.org/Icons/valid-html401" alt="W3C Validator">
+</footer>
+</body>
+
+
+</html>
