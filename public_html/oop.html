@@ -138,48 +138,52 @@
                 <p>Abstraction creates abstract classes, which can be considered as a blueprint for other classes. It allows us to create methods within any child classes. A class that contains one or more abstract methods is called an abstract class.</p>
                 <p> In Python, Abstraction is used to hide the functionality of the function from the users. It calls for a small set of public methods which any other class can call without knowing how they work.</p>
                 <p>For more infomation about abstraction, please read <a href="https://www.geeksforgeeks.org/abstract-classes-in-python/" target="_blank">Abstract Classes in Python</a> </p>
+                <h5><u><strong>3. Inheritance:</strong></u></h5>
+                <p>Inheritance is the capability of one class to derive or inherit the properties from another class. This provides reusability of the code , so you don’t have to write the same code again. Also, it allows us to add more features to a class without modifying it. </p>
+                <p>It means you create a child class by deriving from another parent class. This way, we form a hierarchy. The child reuses all fields and methods of the parent class (common part) and can implement its own unique part. </p>
+                <p>In this example, we have a parent class called Calculator. The class has data attributes to store value x and value y. </p>
+                <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                    <img class="img-fluid" src="images/3.jpg" alt="Screenshot from Pycharm ">
+                    <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm] </p>
+                </div>
+                <p>Then, we call the class factory method, which is an expression that gets evaluated after your function is defined. The class method can access or modify the class state.  It takes cls as its first argument, followed by other arguments and returns a class method for function. </p>
+                <p>The __init__ method is similar to constructors in other programming languages. It is run as soon as an object of a class is instantiated. </p>
+                <p>Then, we create a child class Addition, which reuses all fields and methods of the parent class and implements its own unique calculation by adding value x and value y.</p>
+                <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                    <img class="img-fluid" src="images/4.jpg" alt="Screenshot from Pycharm ">
+                    <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm] </p>
+                </div>
+                <h5><u><strong>4. Polymorphism:</strong></u></h5>
+                <p>Polymorphism means having “many forms”. In programming, it means having the same function name but different signatures. We can define methods in the child class that have the same name as the methods in the parent class. </p>
+                <p>Sometimes we want to use a list, which contains a mix of all these classes. Polymorphism allows us to use a class exactly like its parent so there are no mixing types. Each child class keeps its own methods as they are. This happens by defining a parent interface to be reused.</p>
+                <p>In my calculator example, addition, subtraction, multiplication and division reuse a common interface for their calculations. Having these four calculations inherit the parent Calculator lets me create a list of calculations and treat them like the same type of object. </p>
+                <h7>Addition: </h7>
+                <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                    <img class="img-fluid" src="images/add.jpg" alt="Screenshot from Pycharm ">
+                    <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm] </p>
+                </div>
+                <h7>Subtraction: </h7>
+                <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                    <img class="img-fluid" src="images/subtract.jpg" alt="Screenshot from Pycharm ">
+                    <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm] </p>
+                </div>
+                <h7>Multiplication: </h7>
+                <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                    <img class="img-fluid" src="images/multiply1.jpg" alt="Screenshot from Pycharm ">
+                    <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm] </p>
+                </div>
+                <h7>Division: </h7>
+                <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                    <img class="img-fluid" src="images/divide1.jpg" alt="Screenshot from Pycharm ">
+                    <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm] </p>
+                </div>
+                <p>Sources used in this article are:</p>
+                <ul>
+                    <li> <a href-="https://www.geeksforgeeks.org/python-oops-concepts/ " target="_blank"> Python OOP Concepts </a></li>
+                    <li> <a href="https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/ " target="_blank">How to explain object-oriented programming concepts to a 6-year-old</a> </li>
+                </ul>
             </div>
         </div>
-        <div class="row my-row">
-            <div class="col-lg-12 col-md-12 col-sm-6 my-col">
-                <h4><u><strong>Vincent Cerf and Robert Kahn</strong></u></h4>
-                <strong>Vincent Cerf and Robert Kahn,</strong> an american internet pioneer and electrical engineer,
-                first met in UCLA,
-                and later collaborated on the design of software called the <strong>Transmission Control
-                Protocol/Internet Protocol (TCP/IP).</strong>
-                Together, they created the architecture of the internet. The TCP/IP protocol was a set of rules for
-                message formats to allow computers and applications to exchange information.
-                These rules were standardized and had to be followed in order for the host to be able to understand the
-                message.
-                Today, Vint Cerf and Robert Kahn are known as “Fathers of the Internet”. They focused on finding a way
-                to get all computers to talk to each other and figured out a way to get
-                networks to send packets back and forth.
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-4 my-col">
-                <h4><u><strong>OSI Model</strong></u></h4>
-                OSI Model is a standardized framework used to show the functions of a networking system.
-
-            </div>
-        </div>
-        <div class="row my-row">
-            <div class="col-md-4 col-sm-6 my-col">
-                <img class="img-fluid" src="images/matrix.jpg" alt="Image of the Matrix">
-                <p style="font-size: 8px"> [Image. From Pixabay by designwebjae. Jan 26 ,2018.
-                    (https://pixabay.com/images/id-3109378/)]</p>
-            </div>
-            <div class="col-md-8 col-sm-6 my-col">
-                <h4><u><strong>IP and DNS</strong></u></h4>
-                <strong>IP</strong> introduced the basic system of numerical addresses. An address such as 129.89.43.5
-                identifies the
-                computer to which a data packet should be sent to and the network on which it can be found. However,
-                ARPAnet users were used to specifying computers by name or email addresses. Thus, a new domain name
-                system (DNS) and TCP/IP protocols replaced the old ARPAnet- connected computers. In the
-                <strong>DNS</strong>, high-level
-                domains had functional codes such as .gov, .edu, .mil, or national codes such as .uk, .usa.
-                Organizations received domain names ending in .edu, or .com. These domain names covered the assigned
-                numerical IP addresses associated with individual computers.
-            </div>
-
         </div>
     </div>
 
