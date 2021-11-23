@@ -116,7 +116,11 @@
 <section>
     <div class="container my-container">
         <div class="row my-row">
-            <div class=" col-lg-12 col-md-12 col-sm-12 my-col">
+            <div class="col-lg-12 col-md-10 col-sm-10 my-col" >
+                <img class="img-fluid" src="images/pp1.jpg" alt="Image of computer code">
+                <p style="font-size: 8px"> [Image by Steve Johnson from Pexels(https://www.pexels.com/photo/yellow-and-red-abstract-painting-1789968/)]
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col" >
                 <h4><u><strong><i>Creational Pattern:</i></strong></u></h4>
                 <p><strong>Creational pattern </strong>deals with the creation of classes or objects, also known as class instantiation or object instantiation. It is very useful for lowering the level of dependency between classes.
                     Class creation patterns use the instantiation process and object creation patterns use delegations. </p>
@@ -131,7 +135,7 @@
             </div>
         </div>
         <div class="row my-row">
-            <div class="col-lg-12 col-md-12 col-sm-6 my-col">
+            <div class="col-lg-12 col-md-12 col-sm-12 my-col">
                 <h4><u><strong><i>Structural Design Pattern:</i></strong></u></h4>
                 <p><strong>Structural Patterns </strong>deals with organizing different classes and objects to create new functionality and make it more efficient. This pattern mostly uses inheritance to create all the interfaces.</p>
                 <h6><u><strong><i>Classification of Structural Design Patterns:</i></strong></u></h6>
@@ -174,7 +178,16 @@
                 <p>In my calculator example, I used <strong>factory pattern,</strong> also known as factory design.
                 Factory Pattern allows an interface or a class to create an object and allows subclasses choose which class or object to instantiate.
                     This is the best way to create an object. </p>
-                <p> In the image below, I created an addition object.</p>
+                <p>Factory instantiates an object and returns it. The create function does exactly that in the calculator example - it returns back a new instance of the object.</p>
+                <p><i>"cls"</i> is the class that is being referred to, such as addition, subtraction, multiplication or division </p>
+                <p><i>Values</i> are the results from the calculation </p>
+                <div class="col-lg-12 col-md-12 col-sm-12 my-col">
+                    <img class="img-fluid" src="images/factory1.jpg" alt="Image of computer code">
+                    <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm]
+                </div>
+                <p>If you want to change how the object is returned, you can edit the create method and everywhere else will change as well.</p>
+                <p>Furthermore, the add_calculation function lets us add calculations to the history and it is a centralized action in our code. It is useful so we don't repeat any lines of code. The add_addition_calculation has only one line of code and only does one action. It doesn't allow methods to be called directly.
+                    </p>
                 <div class="col-lg-12 col-md-12 col-sm-12 my-col">
                     <img class="img-fluid" src="images/creational.jpg" alt="Image of computer code">
                     <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm]
@@ -201,14 +214,12 @@
                 </div>
                 <p>Then, I wrapped my commands in a façade, which is the "Calculator" class and the commands tell it what to do. This is known as the command pattern. </p>
                 <p>If I need to change anything about how my object is returned, I can go to my create method and change it there, so then everywhere else in the program will have those changes.</p>
-                <p>This relates back to <strong>the factory pattern.</strong> The create function returns a new instance of an object. </p>
-                <p>"cls" is the class that is being referred to, such as addition, subtraction, multiplication or division </p>
-                <p>Values are the results from the calculation </p>
-
                 <div class="col-lg-12 col-md-12 col-sm-12 my-col">
                     <img class="img-fluid" src="images/create.jpg" alt="Image of computer code">
                     <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm]
                 </div>
+
+
             </div>
         </div>
 
