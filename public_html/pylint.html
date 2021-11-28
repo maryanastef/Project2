@@ -121,32 +121,32 @@
     <div class="container my-container">
         <div class="row my-row">
             <div class="col-lg-12 col-md-12 col-sm-12 my-col">
-                <h2 style="text-align: center; color: rebeccapurple"><u><strong>Pylint Manual</strong></u></h2>
+                <h2 style="color: rebeccapurple"><u><strong>Pylint Manual</strong></u></h2>
                 <p>Pylint is a tool that checks for errors in your Python code. It analyzes your code and compares it to the coding standard. If you are coding in Python, the computer does not catch bugs for you.
                     Therefore, you need a lint tool, like Pylint, to find errors.</p>
                 <p>The default coding style used by Pylint is similar to PEP 8.</p>
                 <h5><strong>Installation:</strong></h5>
                 <p>Assuming that you are using Python, Pylint should be easily installable using pip. Install Pylint by running this command: </p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">pip install pylint</p>
+                <p class="col-lg-2 col-md-4 col-sm-2" style="background-color:darkseagreen">pip install pylint</p>
                 <p>Check where Pylint was installed by running:</p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">$ which pylint</br>/usr/local/bin/pylint</p>
+                <p class="col-lg-2 col-md-4 col-sm-2" style="background-color:darkseagreen">$ which pylint</br>/usr/local/bin/pylint</p>
                 <p><i> For more information, please visit the <a href="https://pylint.pycqa.org/en/latest/user_guide/installation.html" target="_blank" >Installation Guide</a></i></p>
                 <h5><strong>Running Pylint:</strong></h5>
                 <p>Pylint is meant to be called from the command line. You can type: </p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen">pylint fileName.py</p>
+                <p class="col-lg-2 col-md-4 col-sm-2" style="background-color:darkseagreen">pylint fileName.py</p>
                 <p> Or you can call the directory, followed by the file. This will only work if the directory is a python package and has an __init__.py file.</p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:darkseagreen"> pylint directory/fileName.py</p>
+                <p class="col-lg-4 col-md-4 col-sm-2" style="background-color:darkseagreen"> pylint directory/fileName.py </p>
                 <p> <i>For more information, please visit the <a href="https://pylint.pycqa.org/en/latest/user_guide/run.html" target="_blank"> Running Pylint Guide </a></i> </p>
                 <h5><strong>Command Line Options:</strong></h5>
                 <p>Pylint has many checkers. You can disable a specific checker and its messages by specifying: </p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:lightgrey"> --disable=< symbol >. </p>
+                <p class="col-lg-2 col-md-4 col-sm-2" style="background-color:lightgrey"> --disable=< symbol >. </p>
                 <p>If you want to enable only some checkers or message symbols, first use  </p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:lightgrey"> --disable=all . </p>
+                <p class="col-lg-2 col-md-4 col-sm-2" style="background-color:lightgrey"> --disable=all . </p>
                 <p>Then,  </p>
-                <p class="col-lg-2 col-md-2 col-sm-2" style="background-color:lightgrey"> --enable=< symbol >. </p>
+                <p class="col-lg-2 col-md-4 col-sm-2" style="background-color:lightgrey"> --enable=< symbol >. </p>
                 <p>where,<strong> < symbol > </strong>is in a comma-separated list of checker names and message symbols. </p>
                 <p> It is possible to disable all messages with <strong>--disable=all. </strong>This is useful to enable only a few checkers or few messages by first disabling everything and then re-enabling what you need.</p>
-                <p> Python will search for a configuration file named pylintrc or .pylintrc </p>
+                <p> Then, Python will search for a configuration file named pylintrc or .pylintrc </p>
                 <h5><strong>Open in PyCharm:</strong></h5>
                 <p>In Pycharm, </br>
                     1. Go to File/Settings/Tools/External Tools/, </br> 2. Click Add "+" button </br> 3. Fill in the arguments:</br> Name: pylint </br> Program: C:\\Python27\Scripts\pylint </br> Parameters: etc... </br> Working directory : $FileDir$</br>
@@ -162,8 +162,8 @@
         </div>
         <div class="row my-row">
             <div class="col-lg-10 col-md-8 col-sm-6 my-col">
-                <h2 style="text-align: center; color: rebeccapurple"><u><strong>GLOSSARY</strong></u></h2>
-                <p style="text-align: center"><i>These are useful terms to know for object-oriented programming</i></p>
+                <h2 style="color: rebeccapurple"><u><strong>GLOSSARY</strong></u></h2>
+                <p style="font-size: 9px"><i>These are useful terms to know for object-oriented programming</i></p>
                 <p><strong>Attribute:</strong> creates attributes on class instances inside methods. </p>
                 <p><strong>Class Method:</strong> means that it is bound to the class and not the object of the class. This is useful for when we need to access the class itself and not the object. Class method can change a class state that would apply across all the instances of a class. </p>
                 <p><strong>Class:</strong> is a code template for creating objects. In Python, a class is created by using the keyword "class".</p>
