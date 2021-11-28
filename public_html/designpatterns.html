@@ -116,12 +116,8 @@
 <section>
     <div class="container my-container">
         <div class="row my-row">
-            <div class="col-lg-12 col-md-10 col-sm-10 my-col" >
-                <img class="img-fluid" src="images/pp1.jpg" alt="Image of computer code">
-                <p style="font-size: 8px"> [Image by Steve Johnson from Pexels(https://www.pexels.com/photo/yellow-and-red-abstract-painting-1789968/)]
-            </div>
             <div class="col-lg-12 col-md-12 col-sm-12 my-col" >
-                <h4><u><strong><i>Creational Pattern:</i></strong></u></h4>
+                <h4><u><strong>Creational Pattern:</strong></u></h4>
                 <p><strong>Creational pattern </strong>deals with the creation of classes or objects, also known as class instantiation or object instantiation. It is very useful for lowering the level of dependency between classes.
                     Class creation patterns use the instantiation process and object creation patterns use delegations. </p>
                 <h6><u><strong><i>Classification of Creational Design Patterns:</i></strong></u></h6>
@@ -136,8 +132,8 @@
         </div>
         <div class="row my-row">
             <div class="col-lg-12 col-md-12 col-sm-12 my-col">
-                <h4><u><strong><i>Structural Design Pattern:</i></strong></u></h4>
-                <p><strong>Structural Patterns </strong>deals with organizing different classes and objects to create new functionality and make it more efficient. This pattern mostly uses inheritance to create all the interfaces.</p>
+                <h4><u><strong>Structural Design Pattern:</strong></u></h4>
+                <p><strong>Structural Pattern </strong>deals with organizing different classes and objects to create new functionality and make it more efficient. This pattern mostly uses inheritance to create all the interfaces.</p>
                 <h6><u><strong><i>Classification of Structural Design Patterns:</i></strong></u></h6>
                 <ul>
                     <li> <a href="https://www.geeksforgeeks.org/adapter-method-python-design-patterns/" target="_blank" > Adapter Method </a></li>
@@ -152,7 +148,7 @@
         </div>
         <div class="row my-row">
             <div class="col-lg-12 col-md-12 col-sm-12 my-col">
-                <h4><u><strong><i>Behavioral Design Pattern:</i></strong></u></h4>
+                <h4><u><strong>Behavioral Design Pattern:</strong></u></h4>
                 <p><strong>Behavioral Pattern </strong>deals with identifying communication patterns and responsibilities between objects. </p>
                 <h6><u><strong><i>Classification of Behavioral Design Patterns:</i></strong></u></h6>
                 <ul>
@@ -172,21 +168,21 @@
         <div class="row my-row">
             <div class="col-lg-12 col-md-12 col-sm-12 my-col">
                 <h2 style="color: red"><strong><u>Calculator Example</u></strong></h2>
-                <p> Please follow this link to view my Github repository </p>
+                <p> Please click on this <a href="https://github.com/maryanastef/calculatorexample/tree/branch-5" target="_blank">link</a> to view my Calculator example on Github. You can review my code and follow along for this example.</p>
                 <h6><strong><i><u>Example of Creational Pattern:</u></i></strong></h6>
                 <p>Creational Pattern deals with the creation of classes or objects. </p>
                 <p>In my calculator example, I used <strong>factory pattern,</strong> also known as factory design.
                 Factory Pattern allows an interface or a class to create an object and allows subclasses choose which class or object to instantiate.
                     This is the best way to create an object. </p>
                 <p>Factory instantiates an object and returns it. The create function does exactly that in the calculator example - it returns back a new instance of the object.</p>
-                <p><i>"cls"</i> is the class that is being referred to, such as addition, subtraction, multiplication or division </p>
-                <p><i>Values</i> are the results from the calculation </p>
+                <p><i><strong>cls</strong></i> is the class that is being referred to, such as addition, subtraction, multiplication or division </p>
+                <p><i><strong>Values</strong></i> are the results from the calculation </p>
                 <div class="col-lg-12 col-md-12 col-sm-12 my-col">
                     <img class="img-fluid" src="images/factory1.jpg" alt="Image of computer code">
                     <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm]
                 </div>
                 <p>If you want to change how the object is returned, you can edit the create method and everywhere else will change as well.</p>
-                <p>Furthermore, the add_calculation function lets us add calculations to the history and it is a centralized action in our code. It is useful so we don't repeat any lines of code. The add_addition_calculation has only one line of code and only does one action. It doesn't allow methods to be called directly.
+                <p>Furthermore, the <strong><i> add_calculation</i> </strong>function lets us add calculations to the history and it is a centralized action in our code. It is useful so we don't repeat any lines of code. The <strong><i>add_addition_calculation</i> </strong>has only one line of code and only does one action. It doesn't allow methods to be called directly.
                     </p>
                 <div class="col-lg-12 col-md-12 col-sm-12 my-col">
                     <img class="img-fluid" src="images/creational.jpg" alt="Image of computer code">
@@ -196,7 +192,7 @@
 
                 <h6><strong><i><u>Example of Structural Pattern:</u></i></strong></h6>
                 <p>In this example, the calculator can be considered a façade. <strong>The Façade Method </strong>is a design pattern that provides a simpler interface to a complex system.</p>
-                <p>The calculator is a façade on a class called “Calculations”. In our calculations class, all the calculations take place. The calculator wraps the calculations class in a façade and provides an interface to send commands to the calculations class. </p>
+                <p>The calculator is a façade on a class called <strong><i>Calculations.</i></strong> In our calculations class, all the calculations take place. The calculator wraps the calculations class in a façade and provides an interface to send commands to the calculations class. </p>
                 <div class="col-lg-12 col-md-12 col-sm-12 my-col">
                     <img class="img-fluid" src="images/facade.jpg" alt="Image of computer code">
                     <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm]
@@ -205,9 +201,9 @@
                 <p> So the façade wraps up the functionality of specific code and provides an easy access to use the code.</p>
 
                 <h6><strong><i><u>Example of Behavioral Pattern:</u></i></strong></h6>
-                <p>In my code, I am illustrating <strong> the command pattern,</strong> which deals with creating a set of commands for the calculator and the user can decide what they want to calculate, instead of us assuming what the user might want.</p>
-                <p> As you can see, I have created @static method that allows me to pass in as many values as I want and adds the values to a list of numbers.</p>
-                <p>Then, I created one line code for adding calculation (add_numbers) and subtracting calculation (subtract_numbers). These functions let me send commands to the "Calculations" class for it to do its commands. Addition, Subtraction, Multiplication and Division inherit from calculation and return the result as an instantiated object. </p>
+                <p>In my code, I am illustrating <strong><i> the command pattern,</i></strong> which deals with creating a set of commands for the calculator and the user can decide what they want to calculate, instead of us assuming what the user might want.</p>
+                <p> As you can see, I have created <strong>@staticmethod </strong> that allows me to pass in as many values as I want and adds the values to a list of numbers.</p>
+                <p>Then, I created one line code for adding calculation, <strong><i>add_numbers</i></strong> and subtracting calculation, <strong><i> subtract_numbers.</i></strong> These functions let me send commands to the "Calculations" class for it to do its commands. Addition, Subtraction, Multiplication and Division inherit from calculation and return the result as an instantiated object. </p>
                 <div class="col-lg-12 col-md-12 col-sm-12 my-col">
                     <img class="img-fluid" src="images/command.jpg" alt="Image of computer code">
                     <p style="font-size: 8px"> [Image from Maryana Stefanyshyn from PyCharm]
